@@ -1,0 +1,30 @@
+\section{Z-Notation}
+\begin{itemize}
+	\item basiert auf Mengenlehre und Prädikatenlogik 1. Stufe
+	\item beschreibt Zustände (durch Menge, Objekte, Prädikate) und Übergänge (durch Beschreibung des Zustands vor und nach Übergang) des Systems
+	\item Schema beschreibt Zustand bzw. Übergang
+	\item strukturiertes Wissen über Domäne wird als Ausgangspunkt zum Modellieren benutzt - \textit{Domäne} = exist. und aufgestellte Systeme die ähnliche Ziele haben\\
+	Aufgestelltes System = System (Entitäten die miteinander interagieren um ein Domainziel zu erreichen) + Umwelt(Elemente, die Input geben und auf Output reagieren)
+	\item \textbf{Modelling the domain}
+	\begin{itemize}
+		\item als Graph; V = Aussagen über zu erreichende Ziele; formale Spezi, das Verhalten des Systems beschreibt; Erklärungen (natürliche Sprache)
+		\item E = Beziehungen zw Zielen verschiedener $v \in V$; 4 Arten:\\
+		is\_supported\_by; is\_undermined\_by(untergraben; x wird ruch y gestört); may\_be\_specialised\_by; must\_be\_considered\_before(geprüft)
+		\item iterativer prozess; Aufstellen von high und low level goals:\\
+		high-level: Knoten haben selten Fragmente formaler Spezi\\
+		low-level: Knoten haben Fragmente formaler Spezi
+		\item Basic System Node: sollte die Basisfunktionalität des Systems beinhalten; mit Stakeholder abgeglichen werden; Ausgangspunkt für weitere Spezifikationen
+	\end{itemize}
+\end{itemize}
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|p{20em}|p{20em}|}
+		\hline
+		Pros	& Cons\\
+		\hline
+		Formal, Strukturiert	& R des Kunden formalisieren nicht trivial\\
+		besseres Verständnis der R durch Domain Model	& iterative Entwicklung kann inkonsistente Spezi hervorrufen\\
+		\hline
+	\end{tabular}
+\end{table}
