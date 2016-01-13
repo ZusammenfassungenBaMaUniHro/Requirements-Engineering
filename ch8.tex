@@ -1,0 +1,34 @@
+\section{Product Lines and Feature Models}
+Product Line = Serie von verschiedenen Produkten, die eine Gruppe formen und vom selben Hersteller stammen\\
+Feature Model = Formalisierung von R; abstrahiert von konkreter Implementierung\\
+Software Product Line = Menge von Ausprägungen eines Softwareprodukts, die auf derselben Plattform basieren; Jede Ausprägung besitzt zusätzliche, unterschiedliche Features die bestimmte Märkte/Kunden bedienen (Bsp: Windows 7 Produktlinie -> unterschiedliche Versionen)\\
+\\
+\textbf{Feature}\\
+\begin{itemize}
+	\item vom Benutzer sichtbare Aspekte/Charakteristiken des Systems
+	\item Systemeigenschaft, die relevant für Stakeholder ist
+	\item logische Einheit von Verhalten, das durch eine Menge von funktionalen und qualitativen R spezifiziert ist
+	\item Feature f = (W; R; S)m mit f erfüllt Requirement R; W sind die Annahmen über das Umfeld; S = Spezifikation von f
+	\item Stück einer Programmfunktionalität
+\end{itemize}
+
+\textbf{Feature Diagram}\\
+Baum von Features; Wurzelknoten = Konzeptgedanke\\
+Knoten = verbindliches oder optionales Feature\\
+\textbf{Feature Model} = Feature Diagram + zusätzliche Daten, wie Featurebeschreibung; Prioriäten; Stakeholder;\\
+helfen R von Produktlinien zu erkennen
+\\
+\textbf{Feature Interaction}\\
+Interaktion zwischen Features zeigt sich nur, wenn diese zusammengesetzt werden und nicht individuell laufen; Beispiel:\\
+Telekomm. Call Waiting and Call Forwarding; beide Features können nicht in Verbindung aktiviert werden, denn wenn eines eine Priorität besitzt, wird das anderes disabled\\
+\\
+\textbf{Feature Oriented Software Development:}\\
+Feature Modeling; Feature Interaction und Feature Implementation sind Bestandteile\\
+Features stehen an erster Stelle und bilden Grundbaustein für Entwicklung\\
+Ablauf
+\begin{enumerate}
+	\item Domain Analysis
+	\item Domain Design and Specification
+	\item Domain Implementation
+	\item Product Conifig and Generation
+\end{enumerate}

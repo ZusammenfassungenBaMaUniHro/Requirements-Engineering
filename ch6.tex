@@ -1,0 +1,59 @@
+\section{Design Rationale (DR)}
+Entwicklungsansatz das die expliziten Gründe, die zum Produkt führten, und deren Darstellung beinhaltet. Quasi welche konkrete Entscheidungen haben zum Produkt geführt?\\
+Oftmals nicht gut dokumentiert, da Entwicklungsprozess sehr komplex: bestehend aus Analyse (Problem in Subprobleme teilen) und Synthese (Teillösungen für Subprobleme zu Gesamtlösung zusammenfügen).
+
+\begin{itemize}
+	\item Design ist fortlaufender Prozess, mit Betrachtung und Entscheidung von Alternativen; da Teilprobleme oft nicht unabhängig voneinander
+	\item \textbf{Wicked} und Tamed Problems: schwere und klar abgegrenzte Probleme
+	\begin{itemize}
+		\item jeder Lösungsversuch ändert das Problemverständnis
+		\item schwer bestimmbar WANN Problem gelöst, da Problem selbst nicht genau definiert werden kann
+		\item Stakeholder müssen sich auf hinreichend gute Lösung einigen
+		\item $\ldots$
+	\end{itemize}
+	
+\end{itemize}
+
+\begin{table}[h]
+	\begin{tabular}{|p{20em}|p{20em}|}
+		\hline
+		Pros	& cons\\
+		\hline
+		Aufzeichnen der Entscheidungen & \\
+		Kommunikation innerhalb des Projekts & \\
+		Integration verschiedener Stakeholder Perspektiven und Interessen & \\
+		Generieren von Ideen & \\
+		Anzeigen ungelöster/wiederkehrender Probleme & \\
+		
+	\end{tabular}
+\end{table}
+
+\textbf{Voraussetzung}\\
+Stakeholder sind bereit für Argumentationsprozess und rationale Entscheidungen zu treffen. Rationale Entscheidungen verkörpern oft fehlendes Wissen.
+
+\subsection{Design Space Analysis and QOC Notation - ein DR Ansatz}
+DSA: Verstehen eines Software Produkts; Systematische Exploration und Auswertung des Entwurfsraum mit Ziel sich für eine Alternative als Lösung zu entscheiden.\\
+Herausforderung für Devs - Aufstellen der QOC Notation zur Unterstützung des DSA\\
+\begin{itemize}
+	\item Ask \textbf{Q}uestions: zur Strukturierung/Vergleich von Optionen und Erstellen neuer Optionen; Option = Lösung/Antwort auf Problem/Frage
+	\item create \textbf{O}ptions; Beispiel konkrete Eigenschaft des Produkts
+	\item List \textbf{C}riteria zur Bewertung von Optionen und schlussendlich auch zu deren Auswahl
+	Characteristics:
+	\begin{itemize}
+		\item Messen der 'Eigenschaften' eines Kriteriums
+		\item muss beurteilbar sein
+		\item Kann sich auf (allgemeinere) Criteria beziehen
+		\item muss unabhängig von anderen Criteria in derselben Hierarchieebene sein 
+	\end{itemize}
+	\item Arguments: unterstützen die Bewertung der Optionen (Bsp: Argument ist Grund dafür das Option 2 besser als Option 1 bewertet wurde)
+\end{itemize}
+Questions and Options erschaffen eine hierarchische Struktur - den Entwurfsraum -> liefern \textbf{QOC Diagram}\\
+- während den Meeting zur Diskussionslenkung benutzbar, indem Teilnehmer an Ideen der DSA orientieren\\
+- nach Meeting zur strukturierten Protokollierung\\
+QOC dient als verständliche Darstellung für verschiedene Stakeholder\\
+\textbf{Grobe QOC:} Ideen des QOC Ansatzes nutzen für die fortlaufende Diskussion\\
+\textbf{Gründliche QIC} : Protokollierung; Transkribieren; Analyse des Protokolls; QOC Diagram\\
+\\
+\textbf{Fazit:}\\
+Notation einfach genug um für alle verständlich zu sein; Flexibel genug um verschiedene Perspektiven zu repräsentieren; genau genug um Annahmen anderer zu dokumentieren\\
+QOC Diagramme nutzen für Probleme, die keine beste oder offensichtliche Lösung haben

@@ -1,0 +1,81 @@
+\section{Scenario-Based Analysis and Design}
+Fokus auf Beschreibung wie Personen das System nutzen um eine Aufgabe zu erledigen.\\
+Organisationen können sich aus zwei Sichten betrachten:
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{20em}|p{20em}|}
+		\hline
+		\textbf{Explizite Ansicht} & \textbf{Implizite Ansicht}\\
+		\hline
+		Aufgaben & Wissen\\
+		Hierarchieposition	& Kontaktnetzwerk\\
+		Workflow 	& Arbeitspraktiken\\
+		Teams	& Communities\\
+		\hline
+	\end{tabular}
+\end{table}
+Klassifikation von Szenarios
+\begin{itemize}
+	\item Problemszenarios als Oberpunkt; Unterteilung in:
+	\item Aktivitätenszenarios: typische oder kritische Dienste, die von Stakeholder erwartet werden
+	\item Informationsszenarios: Daten die zw Nutzer und System ausgetauscht werden
+	\item Interaktionsszenarios: Interaktion zw Nutzer und System
+\end{itemize}
+
+
+Übersicht der Analyse
+\begin{enumerate}
+	\item Root Concept of the system to be developed\\
+	intiale Analyse der R; Auflistung der Schlüsselaspekte der Vision; dient als Ausgangspunkt für weitere Analysen\\
+	Dient zur Entwicklung von Scenarios
+	\item Field studies: Arbeitsplatz beobachten; Interviews; Artefakte bestimmen; Beziehungen zwischen Akteuren
+	\item Summaries:
+	\item Bestimmen von
+		\begin{itemize}
+			\item Problemszenarios: Darstellung des Ergebnisses der Field Studies -> Schreiben von Szenarios\\
+			Ziel: Vorstellen von Themen und Beziehungen für die weitere Entwicklung
+			\item Analyse von Ansprüchen (Claims): finden von Kernfeatures/Artefakten\\
+			Ziel: Themen und implizite Beziehungen explizit herausarbeiten und für Diskussion nutzbar machen
+		\end{itemize}
+	eng miteinander verdrahtet
+\end{enumerate}
+
+\textbf{Elemente eines Szenarios}
+\begin{itemize}
+	\item Actor
+	\item Umgebung
+	\item Ziele
+	\item Pläne
+	\item Events
+	\item Aktionen
+\end{itemize}
+
+\textbf{Zusammenfassung}
+\begin{itemize}
+	\item \textbf{Szenario}: Beschreibt Informationen über Akteure, ihre Annahmen über das Umfeld, ihre Ziele, Motive, Aktionen... etc\\
+	Darstellung in verschiedenen Formen und Medien\\
+	Informell, semi-formal, formale Notationen mgl
+	\item \textbf{Claim/Anspruch}: Beschreibung eines Artefakts, das in Scenario vorkommt und Einfluss auf Akteure hat\\
+	stellt implizite Beziehungen expliziter dar.
+	\item Handlungsorientiert: Analyse der aktuellen Praxis und daraus neue Aktivitäten entwickeln
+	\item erleichtern Nachdenken über komplexe Systeme
+\end{itemize}
+
+
+\section{Non-Functional Requirements Framework}
+NFRs treiben den ganzen Entwurfsprozess voran bzw als zentraler Bestandteil des Prozesses.\\
+NFRs stellen die Rechtfertigung für Design Entscheidungen und Bedingungen dar wie geforderte Funktionalitäten umgesetzt werden. Behandelt als \textbf{Softgoals}\\
+\begin{itemize}
+	\item Ziel, das nicht zu 100\%, aber gut genug erfüllt werden muss
+	\item 1 Softgoal erfüllt oder lehnt/verweigert anderes softgoal ab.
+\end{itemize}
+Bestandteile/Ablauf des Frameworks
+\begin{itemize}
+	\item Erhalten von Wissen über: Anwendungsdomain; functional R für Teile des Systems; 
+	\item Identifizieren und Zerlegen von einzelnen NFRs
+	\item Identify Entwurfsalternativen für NFRs
+	\item Auswerten/Behandeln von Trade Off; Prioritäten; Mehrdeutigkeiten
+	\item Auswahl von Entwurfsalternativen
+	\item Entscheidungen mit Design Rationale begründen
+	\item Auswertung der Entscheidungen und deren Einfluss
+\end{itemize}
